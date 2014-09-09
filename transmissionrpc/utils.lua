@@ -12,7 +12,7 @@ function utils.nice_bytes(bytes)
 end
 
 function utils.nice_speed(bps)
-    return string.format("%sB/s", nice_bytes(bps))
+    return string.format("%sB/s", utils.nice_bytes(bps))
 end
 
 return utils
